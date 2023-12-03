@@ -28,6 +28,7 @@ from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
+from libqtile import hook
 
 mod = "mod4"
 terminal = "kitty"
@@ -153,10 +154,14 @@ screens = [
                 widget.Clock(format="%d-%m-%Y %a %H:%M", foreground="74C7EC", background="1E1E2E"),
                 #widget.QuickExit(),
             ],
+            # Define Bar Height
             24,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
+        # Set Static Wallpaper
+        wallpaper='/home/yamato/Pictures/Wallpapers/arch_warm.jpg',
+        wallpaper_mode='fill'
         # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
         # By default we handle these events delayed to already improve performance, however your system might still be struggling
         # This variable is set to None (no cap) by default, but you can set it to 60 to indicate that you limit it to 60 events per second
@@ -209,3 +214,14 @@ wl_input_rules = None
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "Geralt"
+
+
+import subprocess
+
+subprocess.Popen(['/bin/bash', '-c', '/home/yamato/.config/qtile/autostart.sh'])
+
+
+#@hook.subscribe.startup_once
+#def autostart:
+#    script = os.path.expanduser("~/.config/qtile/autostart.sh")
+#    subprocess.run([script])
