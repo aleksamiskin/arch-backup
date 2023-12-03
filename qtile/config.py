@@ -136,10 +136,10 @@ screens = [
     Screen(
         bottom=bar.Bar(
             [
-                widget.CurrentLayout(foreground="74C7EC", background="1E1E2E"),
-                widget.GroupBox(background="1E1E2E"),
+                widget.CurrentLayout(foreground="74C7EC", background="011627"),
+                widget.GroupBox(background="011627"),
                 widget.Prompt(),
-                widget.WindowName(foreground="74C7EC", background="1E1E2E"),
+                widget.WindowName(foreground="74C7EC", background="011627"),
                 widget.Chord(
                     chords_colors={
                         "launch": ("#ff0000", "#ffffff"),
@@ -151,7 +151,7 @@ screens = [
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
                 widget.Systray(),
-                widget.Clock(format="%d-%m-%Y %a %H:%M", foreground="74C7EC", background="1E1E2E"),
+                widget.Clock(format="%d-%m-%Y %a %H:%M", foreground="74C7EC", background="011627"),
                 #widget.QuickExit(),
             ],
             # Define Bar Height
