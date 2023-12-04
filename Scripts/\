@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# Set names for my interfaces
+WIFI_INTERFACE="wlan0"
+ETHERNET_INTERFACE="eth0"
+
+# Activate Ethernet
+switch_to_ethernet(){
+	echo "Switching to Ethernet..."
+	ip link set dev "$WIFI_INTERFACE" down
+	echo "WiFi DOWN"
+	ip link set dev "$ETHERNET_INTERFACE" up
+	echo "ETHERNET UP"
+	echo "-----STE_DONE-----"
+}
+
+# Activate WiFi
+switch_to_wifi(){
+	echo "Switching to WiFi..."
+	ip link set dev "$ETHERNET_INTERFACE" down
+	echo "ETHERNET DOWN"
+	ip link set dev "$WIFI_INTERFACE" up
+	echo "WIFI UP"
+	echo "-----STW_DONE-----"
+}
+
+# Check the current status of connection interfaces
+#get_current_connection_type(){
+	if ip link show dev $ETHERNET_INTERFACE | grep -q "state UP"; then
+		if ip link show dev $WIFI_INTERFACE | grep -q "state UP"; then
+			echo "BOTH"
+			switch_to_ethernet
+		else
+			echo "Ethernet"
+			switch_to_wifi
+		fi
+	elif ip link show dev $WIFI_INTERFACE | grep -q "state UP"; then
+		echo "WiFi"
+		switch_to_ethernet
+	else
+		echo "Nothing UP"
+		switch_to_ethernet
+	fi
+#}
+
+# Main function
+#	current_type=$(get_current_connection_type)
+#	echo $current_type
+#	if [[$current_type == "BOTH"]]; then
+#		echo "Both Interfaces are up."
+#		switch_to_ethernet
+#	elif [[$current_type == "Ethernet"]]; then
+#		echo "Ethernet is up."
+#		switch_to_wifi
+#	elif [[$current_type == "WiFi"]]; then
+#		echo "WiFi is up."
+#		switch_to_ethernet
+#	else
+#		switch_to_ethernet
+#	fi
+#	echo ""
+#	echo "Current interface: $(get_current_connection_type)"
+
+exit 0
