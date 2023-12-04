@@ -227,7 +227,7 @@ wmname = "Geralt"
 
 import subprocess
 
-subprocess.Popen(['/bin/bash', '-c', '/home/yamato/.config/qtile/autostart.sh'])
+subprocess.Popen(['/bin/bash', '-c', '/home/yamato/.config/Scripts/autostart.sh'])
 
 
 #@hook.subscribe.startup_once
