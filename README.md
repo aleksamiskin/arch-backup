@@ -8,7 +8,7 @@ The point is to create a lean, customizable and functional programming setup whi
 
 It was obvious I'll have to transition to Linux, so the only unknown variable was the distro I will be using. 
 
-In choosing a distro Arch became a clear choice being known as lightweight and extremely customizable. The other choice was Gentoo, but I'll get to that one some other time. :)
+In choosing a distro, Arch became a clear choice being known as lightweight and extremely customizable. The other choice was Gentoo, but I'll get to that one some other time. :)
 
 Back in the day, when installing arch, you'd have to set most things manually but now we have "archinstall", even though it can be broken at times leaving you no choice but to revert to manually setting things up and in a way negating its existence.
 
@@ -41,3 +41,4 @@ Features
 - application launcher: [rofi](https://wiki.archlinux.org/title/rofi) (simple, fast, able to switch windows, launch apps, and is better than [dmenu](https://wiki.archlinux.org/title/dmenu))
 - aur manager: [yay](https://github.com/Jguer/yay) (I mostly use official arch repos, but in some cases aur is useful)
 - screenshots: [maim](https://github.com/naelstrof/maim) (support for fullscreen and region ss)
+- themes: custom [theme](https://github.com/aleksamiskin/arch-backup/blob/master/kitty/nightfly.conf) based on nightfly
