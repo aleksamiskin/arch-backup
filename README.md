@@ -29,7 +29,7 @@ Features
 - - both are connected on startup, wrote a [script](https://github.com/aleksamiskin/arch-backup/blob/master/Scripts/switch_between_network_interfaces.sh) using iproute2 to switch between them. Default is Ethernet when both are UP.
 - editor: [neovim](https://github.com/neovim/neovim/tree/master) (imo a better [vim](https://github.com/vim/vim), steep learning curve, but speeds up coding using keybinds; no GUI, runs in terminal)
 - - plugin manager: [Lazy](https://github.com/folke/lazy.nvim) (for me easier to setup than [Packer](https://github.com/wbthomason/packer.nvim))
-- - LSP: [Mason](https://github.com/aleksamiskin/arch-backup/blob/master/nvim/lua/yamato/plugins/lsp/mason.lua) with [nvim-lspconfig](https://github.com/aleksamiskin/arch-backup/blob/master/nvim/lua/yamato/plugins/lsp/lspconfig.lua) 
+- - LSP: [Mason](https://github.com/williamboman/mason.nvim) with [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) 
 - web browser: [firefox](https://wiki.archlinux.org/title/firefox) (used it for awhile, thinking about testing the brave browser for a chromium based experience)
 - audio stack: [alsa](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture)->[pipewire](https://wiki.archlinux.org/title/PipeWire) (with [pipewire-pulse](https://archlinux.org/packages/?name=pipewire-pulse) for volume control, thinking about writing some scripts to control volume using alsa only, but retaining the functionalities of pipewire)
 - media:
