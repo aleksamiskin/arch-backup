@@ -41,6 +41,7 @@ fg = "82AAFF"
 # Define some useful paths
 home_path = "/home/yamato/"
 scripts_path = home_path + ".config/Scripts/"
+wallpaper_path = home_path + "Pictures/Wallpapers/"
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -179,7 +180,7 @@ screens = [
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
         ),
         # Set Static Wallpaper
-        wallpaper='/home/yamato/Pictures/Wallpapers/arch_warm.jpg',
+        wallpaper = wallpaper_path + 'arch_warm.jpg',
         wallpaper_mode='fill'
         # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
         # By default we handle these events delayed to already improve performance, however your system might still be struggling
@@ -238,7 +239,7 @@ wmname = "Geralt"
 import subprocess
 
 # Only starts picom for now
-subprocess.Popen(['/bin/bash', '-c', '{scripts_path}/autostart.sh'])
+subprocess.Popen(['/bin/bash', '-c', scripts_path + 'autostart.sh'])
 
 # Take screenshot, fullscreen
 
