@@ -40,5 +40,5 @@ Features
 - file explorer: [ranger](https://wiki.archlinux.org/title/ranger) (fast, lean, terminal based)
 - application launcher: [rofi](https://wiki.archlinux.org/title/rofi) (simple, fast, able to switch windows, launch apps, and is better than [dmenu](https://wiki.archlinux.org/title/dmenu))
 - aur manager: [yay](https://github.com/Jguer/yay) (I mostly use official arch repos, but in some cases aur is useful)
-- screenshots: [maim](https://github.com/naelstrof/maim) (support for fullscreen and area screenshots, bound via [qtile.config](https://github.com/aleksamiskin/arch-backup/blob/master/qtile/config.py) to execute "ss" scripts in [Scripts](https://github.com/aleksamiskin/arch-backup/tree/master/Scripts))
+- screenshots: [maim](https://github.com/naelstrof/maim) (support for fullscreen and area screenshots, bound via [qtile config](https://github.com/aleksamiskin/arch-backup/blob/master/qtile/config.py) to execute "ss" scripts in [Scripts](https://github.com/aleksamiskin/arch-backup/tree/master/Scripts))
 - themes: custom [theme](https://github.com/aleksamiskin/arch-backup/blob/master/kitty/nightfly.conf) based on nightfly, used system wide when possible (TODO: find a way to automate this)
