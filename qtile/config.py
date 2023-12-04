@@ -24,6 +24,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+import os
+import subprocess
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
@@ -35,6 +37,10 @@ terminal = "kitty"
 # Define background and foreground colors to match in widgets
 bg = "011627"
 fg = "82AAFF"
+
+# Define some useful paths
+home_path = "/home/yamato/"
+scripts_path = home_path + ".config/Scripts/"
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -83,7 +89,11 @@ keys = [
     # -------------------------------------Custom bindings------------------------------------- 
     Key([mod], "b", lazy.hide_show_bar(), desc="hide the qtile status bar"),
     Key([mod], "r", lazy.spawn('rofi -show drun'), desc="launch stuff via rofi"),
-    Key([mod], "c", lazy.spawn('firefox'), desc="launch firefox")
+    Key([mod], "c", lazy.spawn('firefox'), desc="launch firefox"),
+    # Take screenshot, fullscreen
+    Key([], "Print", lazy.spawn(scripts_path + "ssFS.sh", shell=True), desc="Takes fullscreen screenshot"),
+    # Take screenshot, choose area
+    Key(["shift"], "Print", lazy.spawn(scripts_path + "ssCA.sh", shell=True), desc="Takes screenshot with area selection")
 ]
 
 groups = [Group(i) for i in "123456789"]
@@ -227,10 +237,11 @@ wmname = "Geralt"
 
 import subprocess
 
-subprocess.Popen(['/bin/bash', '-c', '/home/yamato/.config/Scripts/autostart.sh'])
+# Only starts picom for now
+subprocess.Popen(['/bin/bash', '-c', '{scripts_path}/autostart.sh'])
+
+# Take screenshot, fullscreen
 
 
-#@hook.subscribe.startup_once
-#def autostart:
-#    script = os.path.expanduser("~/.config/qtile/autostart.sh")
-#    subprocess.run([script])
+# Take screenshot, chose area
+
