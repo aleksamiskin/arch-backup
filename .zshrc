@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:$HOME/Scripts/"
+export PATH="$PATH:$HOME/.config/Scripts/"
 export RANGER_LOAD_DEFAULT_RC=false
 export EDITOR="nvim"
 # Set name of the theme to load --- if set to "random", it will
@@ -100,6 +100,6 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
  alias zshconfig="nvim ~/.zshrc"
- alias connection="$HOME/Scripts/switch_between_network_interfaces.sh"
+ alias connection="$HOME/.config/Scripts/switch_between_network_interfaces.sh"
  
 # alias ohmyzsh="mate ~/.oh-my-zsh"
