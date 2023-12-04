@@ -19,7 +19,7 @@ Features
 --------
 
 - display server: [x11](https://en.wikipedia.org/wiki/X_Window_System) (primary), [wayland](https://wiki.archlinux.org/title/wayland) (testing)
-- compositor(for x11): [picom](https://github.com/yshui/picom) (provides window transparency)
+- compositor(for x11): [picom](https://github.com/yshui/picom) (provides window transparency) started with qtile calling [autostart.sh](https://github.com/aleksamiskin/arch-backup/tree/master/Scripts/autostart.sh)
 - tiling window manager: [Qtile](https://qtile.org/) (fast, customizable, chance to learn Python for customizng)
 - terminal: [Kitty](https://sw.kovidgoyal.net/kitty/) (customizable, not as fast as alacritty, although comparable performance but supports ligatures)
 - shell: [ZSH](https://wiki.archlinux.org/title/zsh) with [oh-my-zsh](https://ohmyz.sh/) (command completion, plugins, theming, compatible with bash)
