@@ -40,3 +40,4 @@ Features
 - file explorer: [ranger](https://wiki.archlinux.org/title/ranger) (fast, lean, terminal based)
 - application launcher: [rofi](https://wiki.archlinux.org/title/rofi) (simple, fast, able to switch windows, launch apps, and is better than [dmenu](https://wiki.archlinux.org/title/dmenu))
 - aur manager: [yay](https://github.com/Jguer/yay) (I mostly use official arch repos, but in some cases aur is useful)
+- screenshots: [maim](https://github.com/naelstrof/maim) (support for fullscreen and region ss)
