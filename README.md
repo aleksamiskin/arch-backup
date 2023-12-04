@@ -31,7 +31,7 @@ Features
 - - plugin manager: [Lazy](https://github.com/folke/lazy.nvim) (for me easier to setup than [Packer](https://github.com/wbthomason/packer.nvim))
 - - LSP: [Mason](https://github.com/williamboman/mason.nvim) with [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) 
 - web browser: [firefox](https://wiki.archlinux.org/title/firefox) (used it for awhile, thinking about testing the brave browser for a chromium based experience)
-- audio stack: [alsa](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture)->[pipewire](https://wiki.archlinux.org/title/PipeWire) (with [pipewire-pulse](https://archlinux.org/packages/?name=pipewire-pulse) for volume control, thinking about writing some scripts to control volume using alsa only, but retaining the functionalities of pipewire)
+- audio stack: [alsa](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture)->[pipewire](https://wiki.archlinux.org/title/PipeWire) (with [pipewire-pulse](https://archlinux.org/packages/?name=pipewire-pulse) for volume control, TODO: write some scripts to control volume using alsa only, but retaining the functionalities of pipewire)
 - media:
 - - music: [mpd](https://wiki.archlinux.org/title/Music_Player_Daemon) server with [Cantata](https://github.com/CDrummond/cantata) as client (possible switch to a different client solution)
 - - video: [mpv](https://wiki.archlinux.org/title/mpv)
