@@ -7,7 +7,6 @@ Back in the day, when installing arch, you'd have to set most things manually bu
 One of my preferences is to use cli instead of gui. The argument is that cli enables more control, and can be automated through scripts if needed.
 
 FEATURES:
-
 -display server: x11(primary), wayland(testing)
 -compositor(for x11): picom (provides window transparency)
 -tiling window manager: Qtile (fast, customizable, chance to learn Python for customizng)
