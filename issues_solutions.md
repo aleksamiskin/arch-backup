@@ -1,3 +1,3 @@
-# This is a list of common issues and solutions I encountered in my arch adventures
+# A list of common issues and solutions for Arch
 - discord: 
 - - ISSUE: missing icons -> SOLUTION: install noto-fonts-emoji from arch extra repo
