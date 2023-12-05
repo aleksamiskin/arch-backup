@@ -102,5 +102,6 @@ source $ZSH/oh-my-zsh.sh
  alias zshconfig="nvim ~/.zshrc"
  alias connection="$HOME/.config/Scripts/switch_between_network_interfaces.sh"
  alias cdc='cd .config/; clear'
+ alias pup='sudo powerpill -Syu'
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
