@@ -129,14 +129,13 @@ layout_border = dict(
 )
 
 layouts = [
-    layout.Columns(**layout_border,
-                   border_width=4),
+    #layout.Columns(**layout_border),
+    layout.MonadTall(**layout_border),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
     # layout.Matrix(),
-    # layout.MonadTall(),
     # layout.MonadWide(),
     # layout.RatioTile(),
     # layout.Tile(),
