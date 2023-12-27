@@ -1,6 +1,7 @@
 # arch-backup
 TLDR
 ----
+IMPORTANT: This setup is deprecated untill further notice in favor of this one [Gentoo](https://github.com/aleksamiskin/Gentoo-Dotfiles).
 
 My ongoing arch project files will be backed up in this repo to facilitate the ongoing progress with my Arch Linux setup.
 
